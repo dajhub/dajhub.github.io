@@ -1,2 +1,2 @@
 # dajhub-github.io
-A personal blog
+A personal blog.
