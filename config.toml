@@ -72,7 +72,7 @@ header_dark_color = "#3b4252"
 # The profile on home page.
 [extra.profile]
 name = "Welcome to my blog ...."
-bio = "Hopefully you may find something useful."
+bio = "Hopefully, you will find something useful."
 # The URL of avatar.
 #avatar_url = "icons/github.svg"
 # Invert color in dark mode.
