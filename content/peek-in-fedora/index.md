@@ -14,9 +14,7 @@ When you have finished recording you press 'stop' and finally give the .gif file
 
 The current Peek version:
 
-\
 ![about-peek](about-peek.webp)
-
 
 
 ## Installing Peek
@@ -25,18 +23,15 @@ To install Peek on Fedora open a terminal and type:
 ```bash
 $ sudo dnf install Peek
 ```
+When opening Peek for the first time you may get the following error message:
 
-When opening the app for the first time you may get an error message
-
-\
 ![error-message](peek-ffmpeg.webp)
 
-If this happens then in your terminal type:
+If this happens you may need to install ffmpeg, which processes video and audio files:
 ```bash
 $ sudo dnf install ffmpeg
 ```
-\
+
 Opening the app should now work.
 
-\
 ![peek-screen](peek-screen.webp)
