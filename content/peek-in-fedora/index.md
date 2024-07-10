@@ -17,7 +17,7 @@ The current Peek version:
 ![about-peek](about-peek.webp)
 
 
-## Installing Peek
+<span style="font-size:1.25em;font-weight:bold;">Installing Peek</span>
 
 To install Peek on Fedora open a terminal and type:
 ```bash
