@@ -51,4 +51,4 @@ This one took me a while to find but one which I really wanted.  It allows you t
       	bspc desktop -f {prev,next}.local
 ```
 
-If needed, my configuration file can be found on my [GitHub](https://github.com/dajhub/dotfiles/blob/646ed25912b5aedb1752ffaa9dd2a9536c10da60/BSPWM/sxhkd/sxhkdrc) page.
+If needed, my configuration file can be found on my [GitLab](https://gitlab.com/dajhub/bspwm/-/blob/main/.config/sxhkd/sxhkdrc?ref_type=heads) page.
