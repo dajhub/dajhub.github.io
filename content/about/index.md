@@ -6,4 +6,4 @@ template = "about.html"
 
 &nbsp;
 
-A personal blog using the static site generator [Zola](https://www.getzola.org/), and an adpated theme from [Papaya](https://www.getzola.org/themes/papaya/).
+A personal blog using the static site generator [Zola](https://www.getzola.org/), and the theme from [Papaya](https://www.getzola.org/themes/papaya/), which I have adapted for my own use/site.

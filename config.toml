@@ -60,38 +60,6 @@ next_page = "To older posts"
 # Customize your post date format. See: https://tera.netlify.app/docs/#date
 date_format = "%B %e, %Y"
 
-#[languages.zh]
-#title = "帕帕雅"
-#description = "一个清新的 Zola 博客与项目模板"
-#base_url = "https://example.com"
-#generate_feed = true
-## The taxonomies to be rendered for the site and their configuration of the default languages
-#taxonomies = [
-#    { name = "tags", feed = true, lang = "zh" },
-#    { name = "categories", feed = true, lang = "zh" },
-#]
-
-#[languages.zh.translations]
-#projects = "项目"
-#blog = "博文"
-#about = "关于"
-#recent_projects = "近期项目"
-#more_projects = "更多项目"
-#recent_blog_posts = "近期博文"
-#more_blog_posts = "更多博文"
-#tag = "标签"
-#tags = "所有标签"
-#to_all_tags = "所有标签"
-#category = "类别"
-#categories = "所有类别"
-#to_all_categories = "所有类别"
-#view_by = "查看方式"
-#other = "其他"
-#minute = "分钟"
-#prev_page = "上一页"
-#next_page = "下一页"
-## Customize your post date format. See: https://tera.netlify.app/docs/#date
-#date_format = "%Y 年 %m 月 %d 日"
 
 [extra]
 # Development environment. Used by the page macros to load remote content only when in "prod" mode
