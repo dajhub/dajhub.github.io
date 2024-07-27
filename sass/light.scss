@@ -1,0 +1,31 @@
+@use "syntax-theme-light";
+
+@mixin theme($theme: light) {
+    --background-color: rgb(236, 239, 244);
+    --header-background-color: rgb(216, 222, 233);
+    --text-color: rgb(51, 51, 51);
+    --text-accent-color: rgb(117, 117, 117);
+    --border-color: rgb(195, 195, 195);
+    --link-color: rgb(0,109,206);
+    --link-hover-color: rgb(29, 163, 136);
+    --link-hover-line-color: rgb(0, 120, 132);
+    --icon-hover-color: var(--link-hover-color);
+    --icon-color: var(--text-color);
+    --code-background: rgb(247, 248, 250);
+    --table-header-background-color: var(--header-background-color);
+
+    --callout-border-radius: 5px;
+    --callout-note-color: rgb(0,151,138);
+    --callout-important-color: rgb(188,88,25);
+    --callout-warning-color: rgb(204,23,41);
+    --callout-alert-color: rgb(204,23,41);
+    --callout-question-color: rgb(130,93,192);
+    --callout-tip-color: rgb(66,139,0);
+}
+
+:root {
+    @include theme($theme: light);
+    @include syntax-theme-light.light;
+}
+
+

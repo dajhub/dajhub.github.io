@@ -1,0 +1,33 @@
+@use "syntax-theme-dark";
+
+@mixin theme($theme: dark) {
+    --background-color: rgb(59, 66, 82);
+    --header-background-color: rgb(46, 52, 64);
+    --text-color: rgb(217, 217, 217);
+    --text-accent-color: rgb(130, 130, 130);
+    --border-color: rgb(66, 66, 66);
+    --link-color: rgb(70,149,247);
+    --link-hover-color: rgb(29, 163, 136);
+    --link-hover-line-color: rgb(0, 120, 132);
+    --icon-hover-color: var(--link-hover-color);
+    --icon-color: var(--text-color);
+    --code-background: rgb(32, 32, 32);
+    --table-header-background-color: var(--header-background-color);
+
+    --callout-border-radius: 5px;
+    --callout-note-color: rgb(65,199,185);
+    --callout-important-color: rgb(237,134,73);
+    --callout-warning-color: rgb(250,87,80);
+    --callout-alert-color: rgb(250,87,80);
+    --callout-question-color: rgb(175,136,235);
+    --callout-tip-color: rgb(117,185,56);
+}
+
+:root {
+    @include theme($theme: dark);
+    @include syntax-theme-dark.dark;
+}
+
+.img-dark {
+    filter: invert(100%) hue-rotate(180deg);
+}
