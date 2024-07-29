@@ -1,8 +1,8 @@
 @use "syntax-theme-dark";
 
 @mixin theme($theme: dark) {
-    --background-color: rgb(59, 66, 82);
-    --header-background-color: rgb(46, 52, 64);
+    --background-color: rgb(46, 52, 64);
+    --header-background-color: rgb(59, 66, 82);
     --text-color: rgb(217, 217, 217);
     --text-accent-color: rgb(130, 130, 130);
     --border-color: rgb(66, 66, 66);
