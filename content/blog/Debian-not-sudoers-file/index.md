@@ -5,7 +5,7 @@ date =   "2023-09-16"
 tags = ["debian"]
 +++
 
-It may be that having installed a new Debian desktop (in my case XFCE4) and you try to update (i.e. "$ sudo apt update && sudo apt upgrade") you end up with the following error message:
+It may be that having installed a new Debian desktop (in my case XFCE4) and you try to update (i.e. "**$ sudo apt update && sudo apt upgrade**") you end up with the following error message:
 
 ![sudoers-error](https://i.imgur.com/RlbbBol.png)
 
