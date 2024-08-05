@@ -1,6 +1,7 @@
 +++
 title =  "Debian - Help, I’m not in the sudoers file!!"
 date =   "2023-09-16"
+[taxonomies]
 tags = ["debian"]
 +++
 
@@ -29,7 +30,7 @@ root   ALL=(ALL:ALL) ALL
 
 ![sudoers-nano](https://i.imgur.com/lFqeTl3.png)
 
-You then want to add an additional line (i.e. `david ALL=(ALL)ALL`) to provide yourself with sudo privileges.  Your user name will obviously be different from mine but the entry should look something like this,
+You then want to add an additional line (i.e. `david ALL=(ALL) ALL`) to provide yourself with sudo privileges.  Your user name will obviously be different from mine but the entry should look something like this,
 
 ![sudoer-added](https://i.imgur.com/AuLn3RC.png)
 

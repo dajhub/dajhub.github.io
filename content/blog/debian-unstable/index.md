@@ -1,6 +1,7 @@
 +++
 title =  "Moving to Debian Unstable"
 date =   "2024-08-05"
+[taxonomies]
 tags = ["debian"]
 +++
 
@@ -11,15 +12,18 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
 ```bash
 sudo micro /etc/apt/sources.list
 ```
+![sources.list original](sources-orig.webp)
 
-2. In the `sources.list` there needs to be only two entries:
+2. In the `sources.list` there needs to be only two entries (see screenshot below):
 
 ```bash
 deb http://deb.debian.org/debian/ unstable main non-free-firmware
 deb-src http://deb.debian.org/debian/ unstable main non-free-firmware
 ```
 
-The other entries/sources can be commented out using the `#` at the beginning of the line.  This will stop them from running.  You can also delete the unneeded sources if desired.
+The other entries/sources can be commented out using the `**#**` at the beginning of the line.  This will stop them from running.  You can also delete the unneeded sources if desired.
+
+![sources.list unstable](sources-unstable.webp)
 
 3. Next, to update the sources list run
 
@@ -31,7 +35,7 @@ This may take some time.
 
 
 {% important(header="Important") %}
-In order to make your life easier in the Unstable version install the "*apt-listbugs and apt-listchanges packages in order to be made aware of grave bugs or important changes when you install new packages or during an upgrade.*"^1^
+In order to make your life easier in the Unstable version install the "*apt-listbugs and apt-listchanges packages in order to be made aware of grave bugs or important changes when you install new packages or during an upgrade.*"<sup>1</sup>
 
 ```bash
 sudo apt update && sudo apt install apt-listbugs apt-listchanges
