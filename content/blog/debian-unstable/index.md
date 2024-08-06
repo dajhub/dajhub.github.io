@@ -21,7 +21,7 @@ deb http://deb.debian.org/debian/ unstable main non-free-firmware
 deb-src http://deb.debian.org/debian/ unstable main non-free-firmware
 ```
 
-The other entries/sources can be commented out using the `**#**` at the beginning of the line.  This will stop them from running.  You can also delete the unneeded sources if desired.
+The other entries/sources can be commented out using the **`#`** at the beginning of the line.  This will stop them from running.  You can also delete the unneeded sources if desired.
 
 ![sources.list unstable](sources-unstable.webp)
 
