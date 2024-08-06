@@ -81,8 +81,6 @@ menu_items = [
 # Width defined in pixels
 max_width = 2500
 
-[extra.logo]
-avatar = "/static/logo.png"
 
 # Open Graph Protocol objects. See: https://ogp.me/
 [extra.ogp]
