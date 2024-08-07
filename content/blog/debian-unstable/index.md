@@ -35,7 +35,7 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
 
 
 {% important(header="Important") %}
-In order to make your life easier in the Unstable version install the "*apt-listbugs and apt-listchanges packages in order to be made aware of grave bugs or important changes when you install new packages or during an upgrade.*"<sup>1</sup>
+In order to make your life easier in the Unstable version install the "*apt-listbugs and apt-listchanges packages in order to be made aware of grave bugs or important changes when you install new packages or during an upgrade.*" <sup>[1](#debian_unstable)</sup>
 
 ```bash
 sudo apt update && sudo apt install apt-listbugs apt-listchanges
@@ -45,6 +45,8 @@ There is additional debian guidance for Unstable/Sid user which it is worth taki
 
 {% end %}
 
+---
 
-Sources:
-1. [Debian Best Practices for Sid/Unstable Users](https://wiki.debian.org/DebianUnstable#:~:text=Install%20the%20apt%2Dlistbugs%20and,data%20is%20not%20a%20problem)
+**Sources:**
+
+<a name="debian_unstable">1</a>: [Debian Best Practices for Sid/Unstable Users](https://wiki.debian.org/DebianUnstable#:~:text=Install%20the%20apt%2Dlistbugs%20and,data%20is%20not%20a%20problem)
