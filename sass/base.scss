@@ -278,6 +278,7 @@ article header h2 {
 .article-info {
     font-size: 0.75em;
     color: var(--text-accent-color);
+    margin-bottom: 1.5em;
 
     a {
         color: var(--text-accent-color);
@@ -457,7 +458,7 @@ figcaption {
 
 .post-summary {
     display: block;
-    margin-block-start: 0.5em;
+    margin-block-start: 0.2em;
     color: var(--text-color);
 
     p {

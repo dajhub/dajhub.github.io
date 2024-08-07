@@ -5,7 +5,7 @@ date =   "2024-08-05"
 tags = ["debian"]
 +++
 
-Debian is often chosen for its stability and for a system that just works.  However, that stability often means that packages can often become out of date.  Moving to the **unstable** branch might be an option.
+Debian is often chosen for its stability and for a system that just works.  However, that stability often means that packages can become out of date.  Moving to the **unstable** branch might be an option.
 
 <!-- more -->
 
