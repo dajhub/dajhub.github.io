@@ -9,29 +9,29 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
 
 1. Using an editor such as nano, micro or vim open the Apt Sources file.  Apt downloads packages from one or more software repositories (sources) and installs them onto your computer.
 
-```bash
-sudo micro /etc/apt/sources.list
-```
-![sources.list original](sources-orig.webp)
+    ```bash
+    sudo micro /etc/apt/sources.list
+    ```
+    ![sources.list original](sources-orig.webp)
 
 2. In the `sources.list` there needs to be only two entries (see screenshot below):
 
-```bash
-deb http://deb.debian.org/debian/ unstable main non-free-firmware
-deb-src http://deb.debian.org/debian/ unstable main non-free-firmware
-```
+    ```bash
+    deb http://deb.debian.org/debian/ unstable main non-free-firmware
+    deb-src http://deb.debian.org/debian/ unstable main non-free-firmware
+    ```
 
-The other entries/sources can be commented out using the **`#`** at the beginning of the line.  This will stop them from running.  You can also delete the unneeded sources if desired.
+    The other entries/sources can be commented out using the **`#`** at the beginning of the line.  This will stop them from running.  You can also delete the unneeded sources if desired.
 
-![sources.list unstable](sources-unstable.webp)
+    ![sources.list unstable](sources-unstable.webp)
 
 3. Next, to update the sources list run
 
-```bash
-sudo apt update && sudo apt full-upgrade
-```
+    ```bash
+    sudo apt update && sudo apt full-upgrade
+    ```
 
-This may take some time.
+    This may take some time.
 
 
 {% important(header="Important") %}
