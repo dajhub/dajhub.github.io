@@ -28,7 +28,7 @@ highlight_themes_css = [
 [languages]
 
 [languages.en]
-title = ":: dajhub"
+title = "dajhub"
 description = "Welcome to my blog...hopefully you might find something useful or interesting."
 #####generate_feed = true
 #####feed_filename = "atom.xml"
@@ -83,6 +83,9 @@ max_width = 2500
 
 [extra.logo]
 avatar = "/logo.png"
+
+[extra.spacer]
+spacer = "::"
 
 # Open Graph Protocol objects. See: https://ogp.me/
 [extra.ogp]
