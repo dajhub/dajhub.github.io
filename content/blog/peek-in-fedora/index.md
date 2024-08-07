@@ -6,7 +6,11 @@ description = "Installing and using Peek to record gif's."
 tags = ["fedora","software"]
 +++
 
-[Peek](https://github.com/phw/peek) is an open source screen recorder for producing gif's.  It has an easy to use interface.  Once installed you open the app, position the see through frame over the part of the screen you want to record, and then press the record button...an example...
+[Peek](https://github.com/phw/peek) is an open source screen recorder for producing gif's. 
+
+<!-- more -->
+
+Peek has an easy to use interface.  Once installed you open the app, position the see through frame over the part of the screen you want to record, and then press the record button...an example...
 
 ![gif](https://i.imgur.com/fpcy0ye.gif#center)
 

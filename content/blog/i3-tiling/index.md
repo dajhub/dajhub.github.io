@@ -6,7 +6,9 @@ description = "How to introduce spiral tiling into the i3 window manager on Fedo
 tags = ["fedora","i3","window manager"]
 +++
 
-i3 is a tiling window manager which automatically places your windows to make the best use of the space available on your screen. 
+i3 is a great tiling window manager which automatically places your windows in vertical columns.  However, it is fairly straight foward to move to a spiral layout. 
+
+<!-- more -->
 
 The default tiling for i3 looks like:
 

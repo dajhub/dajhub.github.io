@@ -1,9 +1,14 @@
 +++
 title =  "Debian - Help, I’m not in the sudoers file!!"
 date =   "2023-09-16"
+
 [taxonomies]
 tags = ["debian"]
 +++
+
+What do you do if you get the message *"Username is not in the sudoers file. This incident will be reported."*
+
+<!-- more -->
 
 It may be that having installed a new Debian desktop (in my case XFCE4) and you try to update (i.e. "**$ sudo apt update && sudo apt upgrade**") you end up with the following error message:
 

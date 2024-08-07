@@ -457,6 +457,8 @@ figcaption {
 
 .post-summary {
     display: block;
+    margin-block-start: 0.5em;
+    color: var(--text-color);
 
     p {
         font-size: 0.8em;

@@ -5,6 +5,10 @@ date =   "2024-08-05"
 tags = ["debian"]
 +++
 
+Debian is often chosen for its stability and for a system that just works.  However, that stability often means that packages can often become out of date.  Moving to the **unstable** branch might be an option.
+
+<!-- more -->
+
 Debian Unstable will provide you with newer packages, but there are inherent risks of breakages, since the packages have not been fully tested. If you do move to Unstable, it's probably best not to do it on a critical machine where you need guaranteed stability. With that said, the steps to move from Debian Stable to Unstable:
 
 1. Using an editor such as nano, micro or vim open the Apt Sources file.  Apt downloads packages from one or more software repositories (sources) and installs them onto your computer.
