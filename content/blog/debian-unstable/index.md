@@ -38,8 +38,8 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
     This may take some time.
 
 
-{% important(header="Important") %}
-In order to make your life easier in the Unstable version install the "*apt-listbugs and apt-listchanges packages in order to be made aware of grave bugs or important changes when you install new packages or during an upgrade.*" <sup>[1](#debian_unstable)</sup>
+{% tip(header="Tip") %}
+In order to make your life easier in the Unstable version install the apt-listbugs and apt-listchanges packages so that you are notified "*of grave bugs or important changes when you install new packages or during an upgrade.*" <sup>[1](#debian_unstable)</sup>
 
 ```bash
 sudo apt update && sudo apt install apt-listbugs apt-listchanges

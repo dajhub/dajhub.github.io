@@ -14,13 +14,20 @@
     --code-background: rgb(32, 32, 32);
     --table-header-background-color: var(--header-background-color);
 
-    --callout-border-radius: 5px;
-    --callout-note-color: rgb(65,199,185);
-    --callout-important-color: rgb(237,134,73);
-    --callout-warning-color: rgb(250,87,80);
-    --callout-alert-color: rgb(250,87,80);
-    --callout-question-color: rgb(175,136,235);
-    --callout-tip-color: rgb(117,185,56);
+    --callout-text-color: rgb(46, 52, 64);
+    --callout-border-radius: 0px;
+    --callout-note-color-border: rgb(255, 234, 0);
+    --callout-note-color-background: rgb(255, 250, 204);
+    --callout-important-color-border: rgb(255, 165, 0);
+    --callout-important-color-background: rgb(255, 237, 204);
+    --callout-warning-color-border: rgb(204,23,41);
+    --callout-warning-color-background: rgb(249, 231, 233);
+    --callout-alert-color-border: rgb(204,23,41);
+    --callout-alert-color-background: rgb(249, 231, 233);
+    --callout-question-color-border: rgb(130,93,192);
+    --callout-question-color-background: rgb(242, 238, 248);
+    --callout-tip-color-border: rgb(66,139,0);
+    --callout-tip-color-background: rgb(236, 243, 229);
 }
 
 :root {

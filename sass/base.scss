@@ -403,7 +403,7 @@ figcaption {
     .callout {
         line-height: inherit;
         margin: 1.25em 0;
-        border: 2.5px solid var(--border-color);
+        border-left: 15px solid;
         border-radius: var(--callout-border-radius);
         padding: 0px 12px;
         display: flex;
@@ -427,34 +427,40 @@ figcaption {
         }
     
         &.note {
-          color: var(--text-color);
-          border-color: var(--callout-note-color);
-        }
-    
-        &.important {
-          color: var(--text-color);
-          border-color: var(--callout-important-color);
-        }
-    
-        &.warning {
-          color: var(--text-color);
-          border-color: var(--callout-warning-color);
-        }
-    
-        &.alert {
-          color: var(--text-color);
-          border-color: var(--callout-alert-color);
-        }
-    
-        &.question {
-          color: var(--text-color);
-          border-color: var(--callout-question-color);
-        }
-    
-        &.tip {
-          color: var(--text-color);
-          border-color: var(--callout-tip-color);
-        }
+            color: var(--callout-text-color);
+            border-color: var(--callout-note-color-border);
+            background-color: var(--callout-note-color-background);
+          }
+      
+          &.important {
+            color: var(--callout-text-color);
+            border-color: var(--callout-important-color-border);
+            background: var(--callout-important-color-background);
+          }
+      
+          &.warning {
+            color: var(--callout-text-color);
+            border-color: var(--callout-warning-color-border);
+            background: var(--callout-warning-color-background);
+          }
+      
+          &.alert {
+            color: var(--callout-text-color);
+            border-color: var(--callout-alert-color-border);
+            background: var(--callout-alert-color-background);
+          }
+      
+          &.question {
+            color: var(--callout-text-color);
+            border-left-color: var(--callout-question-color-border);
+            background: var(--callout-question-color-background);
+          }
+      
+          &.tip {
+            color: var(--callout-text-color);
+            border-color: var(--callout-tip-color-border);
+            background: var(--callout-tip-color-background);
+          }
       }
 }
 

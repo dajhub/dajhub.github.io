@@ -29,7 +29,7 @@ highlight_themes_css = [
 
 [languages.en]
 title = "dajhub"
-description = "Welcome to my blog where, as a Linux enthusiast, I share my tips with you. I hope you enjoy your stay and find something that is useful."
+description = "Welcome to my blog where, as a Linux enthusiast, I share my tips with you. I hope you find something that is useful."
 #####generate_feed = true
 #####feed_filename = "atom.xml"
 # The taxonomies to be rendered for the site and their configuration of the default languages
