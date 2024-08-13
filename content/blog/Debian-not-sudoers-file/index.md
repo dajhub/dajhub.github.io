@@ -6,7 +6,7 @@ date =   "2023-09-16"
 tags = ["debian"]
 +++
 
-What do you do if you get the message *"Username is not in the sudoers file. This incident will be reported."*
+What do you do if you get the message **"Username is not in the sudoers file. This incident will be reported."**
 
 <!-- more -->
 
