@@ -6,8 +6,7 @@ description = "Installing a minimal version of the Fedora Cinnamon desktop"
 tags = ["desktop", "cinnamon"]
 +++
 
-
-# Fedora: Minimal Cinnamon Desktop Install
+# A Minimal Install
 
 Fedora offers a specific spin for [Cinnamon Desktop](https://fedoraproject.org/spins/) but if you are looking for a more minimal install which doesn't include, for example, dnfdragora, LibrOffice, HexChat, Pidgin, Thunderbird, Transmission, Rhythmbox, XawTV Television Viewer, etc., then this post might be of interest.
 
@@ -17,10 +16,10 @@ To make a minimal Fedora install you will need to download the iso from the **Fe
 	
 ![fedora-minimal](minimal-install.webp)
 
-With the installation complete, reboot and login with your username and password. In the terminal which loads:
+With the installation complete, reboot and login with your username and password. To install the basic Cinnamon desktop you need to install the following:
 
 ```bash
-sudo dnf install cinnamon* @base-x -y
+sudo dnf install cinnamon* @base-x
 ```
 
 You will also want to install some essentials, e.g.
@@ -31,7 +30,7 @@ sudo dnf install nemo-fileroller gnome-terminal firefox
 
 # Display Manager
 
-The display manager or login manager is where you input your username and password to get to your desktop.  The display manager I use is [sddm](https://github.com/sddm/sddm), which is the default for KDE. The Cinnamon default is [slick-greeter](https://github.com/linuxmint/slick-greeter). Insalling and enable either option is shown below.  For sddm,
+The display manager or login manager is where you input your username and password to get to your desktop.  The display manager I use is [sddm](https://github.com/sddm/sddm), which is the default for KDE. The Cinnamon default is [slick-greeter](https://github.com/linuxmint/slick-greeter). Installing and enable either option is shown below.  For sddm,
 
 ```bash
 sudo dnf install sddm
@@ -45,7 +44,7 @@ sudo dnf install lightdm slick-greeter
 
 ## Enabling the Display Manager
 
-If you have installed **sddm** then you will need to enable it. In a terminal,
+You will need to enable your chosen display manager. For **sddm**:
 
 ```bash
 systemctl enable sddm
@@ -54,7 +53,7 @@ systemctl set-default graphical.target
 
 ![sddm](sddm.webp)
 
-In the next post I will show how to improve the look of the sddm display manager.
+Not the most attractive display manager!!  However, in the next post I will show how to improve the look of the sddm display manager.
 
 To enable **slick greeter**
 
@@ -65,6 +64,11 @@ systemctl set-default graphical.target
 
 ![slick-greeter](slick-greeter.webp)
 
+You can now reboot into your display manager and login to your desktop.  To do this,
+
+```bash
+reboot
+```
 
 # Connecting to Wi-Fi
 
