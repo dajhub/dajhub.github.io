@@ -1,7 +1,6 @@
 +++
 title = "Fedora: Minimal Cinnamon Desktop Install"
 date = "2024-10-04"
-description = "Installing a minimal version of the Fedora Cinnamon desktop"
 [taxonomies]
 tags = ["desktop", "cinnamon"]
 +++
