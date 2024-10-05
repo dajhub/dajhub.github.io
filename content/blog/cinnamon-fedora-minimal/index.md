@@ -5,13 +5,13 @@ date = "2024-10-04"
 tags = ["desktop", "fedora", "cinnamon"]
 +++
 
-# A Minimal Install
-
 Fedora offers a specific spin for [Cinnamon Desktop](https://fedoraproject.org/spins/) but if you are looking for a more minimal install which doesn't include, for example, dnfdragora, LibrOffice, HexChat, Pidgin, Thunderbird, Transmission, Rhythmbox, XawTV Television Viewer, etc., then this post might be of interest.
 
 <!-- more -->
 
 ![cinnamon-desktop](desktop.webp)
+
+# A Minimal Install
 
 To make a minimal Fedora install you will need to download the iso from the **Fedora Everything** [page](https://fedoraproject.org/everything/download).  The Fedora installer takes you through the installation process in clear steps.  Importantly, when you get to the page/step shown below ensure that you only select ***Minimal Install**.
 	
