@@ -31,7 +31,7 @@ sudo dnf install nemo-fileroller gnome-terminal firefox
 
 # Display Manager
 
-The display manager or login manager is where you input your username and password to get to your desktop.  The display manager I use is [sddm](https://github.com/sddm/sddm), which is the default for KDE. The Cinnamon default is [slick-greeter](https://github.com/linuxmint/slick-greeter). Both options are shown below.  For sddm,
+The display manager or login manager is where you input your username and password to get to your desktop.  The display manager I use is [sddm](https://github.com/sddm/sddm), which is the default for KDE. The Cinnamon default is [slick-greeter](https://github.com/linuxmint/slick-greeter). Insalling and enable either option is shown below.  For sddm,
 
 ```bash
 sudo dnf install sddm
