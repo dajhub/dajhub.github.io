@@ -54,7 +54,7 @@ systemctl set-default graphical.target
 
 ![sddm](sddm.webp)
 
-Not the most attractive display manager!!  However, in the next post I will show how to improve the look of the sddm display manager.
+Not the most attractive display manager!!  However, the layout/look can be improved and may be the content for a future post.
 
 To enable **slick greeter**
 
