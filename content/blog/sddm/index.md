@@ -62,7 +62,7 @@ With the new theme installed we can easily tweak it.  The theme is located in `/
 
 Changes that I have made:
 
-- changing the background image, located in `/usr/share/sddm/themes/corners/bacgrounds`
+- replaced the background image, located in `/usr/share/sddm/themes/corners/bacgrounds`
 - widening the vertical gap between the date and time which seemed too close to me
 - removing the user picture
 - changing the look of the login details in the bottom right
