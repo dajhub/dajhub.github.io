@@ -2,7 +2,7 @@
 title = "Micro Text Editor - Copy and Paste Functionality in Wayland"
 date = "2025-05-27"
 [taxonomies]
-tags = ["display manager", "software"]
+tags = ["window manager", "software"]
 +++
 
 This post looks at how to enable the external copy and paste function within the **micro** text editor.
