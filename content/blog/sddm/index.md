@@ -5,7 +5,7 @@ date = "2025-05-29"
 tags = ["display manager", "software"]
 +++
 
-While I do not use the KDE desktop I do like its display manager, SDDM.  Thhe default SDDM theme is not, in my opinion, very visually appealing (see image below) but it can be changed.  This post looks at how we can change the theme and edit the theme to our liking.  I am currently using Arch but there will be similarities with other Linux Distribution such as Fedora and Debian.
+While I do not use the KDE desktop I do like its display manager, SDDM.  The default SDDM theme is not, in my opinion, very visually appealing (see image below) but it can be changed.  This post looks at how we can change the theme and then edit it to our liking.  I am currently using Arch but there will be similarities with other Linux Distribution such as Fedora and Debian.
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ sudo systemctl enable sddm.service -f
 
 # Changing the SDDM Theme
 
-I have found the [sddm corners theme](https://github.com/aczw/sddm-theme-corners) easy to install (in a non-KDE environment) and also easy to edit.  Instructions for installation can be found on their [site](https://github.com/aczw/sddm-theme-corners).  The theme can also be found in Arch's AUR. On Arch:
+I have found the [sddm corners theme](https://github.com/aczw/sddm-theme-corners) easy to install (in a non-KDE environment) and also easy to edit.  Instructions for installation can be found on their [site](https://github.com/aczw/sddm-theme-corners?tab=readme-ov-file#installation).  The theme can be found in Arch's AUR. To install:
 
 ```bash
 # Install dependencies
@@ -49,14 +49,14 @@ Current=corners" | sudo tee /etc/sddm.conf
 sudo systemctl enable sddm.service
 ```
 
-With the new theme applied:
+SDDM with the new theme applied:
 
 ![sddm corners orig](sddm-corners-orig.webp)
 
 
 # Making Changes to the Corners Theme
 
-SDDM looks much improved, but we can easily tweak the theme.  The current theme is located in `/usr/share/sddm/themes/corners/`
+With the new theme installed we can easily tweak it.  The theme is located in `/usr/share/sddm/themes/corners/`
 
 ![corners files](corners-files.webp)
 
@@ -210,7 +210,7 @@ The contents of the **original** file:
 129	TimeFormat="hh:mm AP"
 ```
 
-The changes made to the config file:
+The changes I then made to the above config file:
 
 ```bash
 line 21 BgSource="backgrounds/light-blue-layers.jpg" #changed the background
@@ -223,7 +223,7 @@ line 78 LoginButtonColor="#eff1f5"
 line 117 DateTimeSpacing=10 #changed from -20 to 10 to improve space between date & time
 ```
 
-I might, in the near future, change the color of the date and time to improve the contrast with the background.  The white text does not really work.
+However, I might, in the near future, change the color of the date and time to improve the contrast with the background.  The white text does not really work on the light background.
 
 Below is the full config file for the updated theme:
 
