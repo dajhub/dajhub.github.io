@@ -5,7 +5,7 @@ date = "2025-05-29"
 tags = ["display manager", "software"]
 +++
 
-I do not use the KDE desktop, although I do like the display manager it uses, SDDM.  However, the default SDDM theme is not exactly attractive.  This post looks at how we can change the theme and also edit parts of it.  I am currently using Arch but there will be a lot of similarities with other Linux Distribution such as Fedora and Debian.
+While I do not use the KDE desktop I do like its display manager, SDDM.  Thhe default SDDM theme is not, in my opinion, very visually appealing (see image below) but it can be changed.  This post looks at how we can change the theme and edit the theme to our liking.  I am currently using Arch but there will be similarities with other Linux Distribution such as Fedora and Debian.
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ sudo systemctl enable sddm.service
 
 {% tip(header="Important") %}
 
-The above commands assume that there is no other display manager installed.  If, for example, you have gdm installed, then you would need to force sddm as your display manager.  The **systemctl** command would now be:
+The above commands assume there is no other display manager installed.  If, for example, you have gdm installed, then you would need to force sddm as your display manager.  The **systemctl** command would now be:
 
 ```bash
 sudo systemctl enable sddm.service -f
@@ -32,7 +32,7 @@ sudo systemctl enable sddm.service -f
 
 # Changing the SDDM Theme
 
-I have found the [sddm corners theme](https://github.com/aczw/sddm-theme-corners) easy to install and also easy to edit.  Instructions for installation can be found on their [site](https://github.com/aczw/sddm-theme-corners).  The theme can be found in Arch's AUR. To install on Arch:
+I have found the [sddm corners theme](https://github.com/aczw/sddm-theme-corners) easy to install (in a non-KDE environment) and also easy to edit.  Instructions for installation can be found on their [site](https://github.com/aczw/sddm-theme-corners).  The theme can also be found in Arch's AUR. On Arch:
 
 ```bash
 # Install dependencies
@@ -49,25 +49,25 @@ Current=corners" | sudo tee /etc/sddm.conf
 sudo systemctl enable sddm.service
 ```
 
-The display manager now looks like:
+With the new theme applied:
 
 ![sddm corners orig](sddm-corners-orig.webp)
 
 
 # Making Changes to the Corners Theme
 
-SDDM looks much improved, but we can also easily adapt the theme.  The theme is located in `/usr/share/sddm/themes/corners/`
+SDDM looks much improved, but we can easily tweak the theme.  The current theme is located in `/usr/share/sddm/themes/corners/`
 
 ![corners files](corners-files.webp)
 
-For example, some of the changes I have made:
+Changes that I have made:
 
-- changing the background
-- widening the gap between the date and time which seems too close to me
+- changing the background image, located in `/usr/share/sddm/themes/corners/bacgrounds`
+- widening the vertical gap between the date and time which seemed too close to me
 - removing the user picture
 - changing the look of the login details in the bottom right
 
-The result of my changes:
+The result:
 
 ![corners new](corners-new.webp)
 
@@ -210,7 +210,7 @@ The contents of the **original** file:
 129	TimeFormat="hh:mm AP"
 ```
 
-The changes I have made to the config file
+The changes made to the config file:
 
 ```bash
 line 21 BgSource="backgrounds/light-blue-layers.jpg" #changed the background
@@ -223,9 +223,7 @@ line 78 LoginButtonColor="#eff1f5"
 line 117 DateTimeSpacing=10 #changed from -20 to 10 to improve space between date & time
 ```
 
-I have also added my own wallpaper to `/usr/share/sddm/themes/corners/backgrounds/` which is referenced in line 21 of the config file.
-
-For the near future I might change the color of the date and time to improve the contrast with the background.  The light white does not really work.
+I might, in the near future, change the color of the date and time to improve the contrast with the background.  The white text does not really work.
 
 Below is the full config file for the updated theme:
 
