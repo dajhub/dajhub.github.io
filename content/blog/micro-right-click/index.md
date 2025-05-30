@@ -26,6 +26,8 @@ to
 
 > Exec = foot micro %F
 
+If you use a different terminal, e.g. kitty/alacritty, then replace **foot** with your terminal.
+
 Next, go to the line that reads
 
 > Terminal = true
