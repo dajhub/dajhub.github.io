@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>Micro Text Editor - Copy and Paste Functionality in Wayland - dajhub</title>
+    <meta name="description" content="Welcome to my blog where, as a Linux enthusiast, I share my tips with you. I hope you find something that is useful.">
+
+    
+    <link rel="stylesheet" href="https://dajhub.co.uk/base.css">
+    <link rel="stylesheet" href="https://dajhub.co.uk/auto.css">
+
+    <link rel="preload" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.3.0&#x2F;css&#x2F;all.min.css as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.3.0&#x2F;css&#x2F;all.min.css></noscript>
+
+    
+
+    
+    
+    <meta property="og:locale" content="en_GB">
+    
+    <meta property="og:title" content="Micro Text Editor - Copy and Paste Functionality in Wayland">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://dajhub.co.uk/about/">
+    <meta property="article:published_time" content="2025-05-27">
+    
+    
+    <meta property="article:tag" content="window manager">
+    
+    <meta property="article:tag" content="software">
+    
+    
+    
+    
+    <meta property="og:url" content="https://dajhub.co.uk/blog/micro-copy-paste/">
+    
+    
+    <meta property="og:description" content="This post looks at how to enable the external copy and paste function within the micro text editor.
+">
+    
+
+
+    
+    
+</head>
+<body>
+<div class="container">
+    
+    
+    <header>
+        <h1 class="site-header">
+            <a href="https:&#x2F;&#x2F;dajhub.co.uk"><img src="&#x2F;logo.png" alt="logo" width="42" height="42">
+            <href="https:&#x2F;&#x2F;dajhub.co.uk">::
+            <href="https:&#x2F;&#x2F;dajhub.co.uk">dajhub
+            </a>
+        </h1>
+        <nav>
+            <ul>
+            
+            
+                
+                <li><a class="active" href="https:&#x2F;&#x2F;dajhub.co.uk&#x2F;blog">Blog</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;dajhub.co.uk&#x2F;tags">Tags</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;dajhub.co.uk&#x2F;about">About</a></li>
+            
+            
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+<article class="post">
+    
+    
+    
+        
+        <header>
+            <h1>Micro Text Editor - Copy and Paste Functionality in Wayland</h1>
+        </header>
+        
+        
+    <div class="article-info">
+        
+        
+        <div class="article-date">May 27, 2025 ◦ 2 min ◦ </div>
+        
+        <div class="article-taxonomies">
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://dajhub.co.uk/tags/window-manager/">#window manager</a></li>
+                    
+                    <li><a href="https://dajhub.co.uk/tags/software/">#software</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+        
+        <header>
+            <h2 class="post-summary">This post looks at how to enable the external copy and paste function within the micro text editor.
+</h2>
+        </header>
+    
+    
+    <div class="content">
+        <span id="continue-reading"></span>
+<p>I am not a developer or system administrator and have never really come to terms with the editors <strong>vim</strong> or <strong>neovim</strong>.  They are undoubtably configurable and efficient, but I do not use them enough to get to that "efficient" level. I am sure they would be great if you were using frequently, day in day out.   I have also used <strong>nano</strong> which is fine, but I have struggled to remember the shortcuts which do not always seem logical for me, e.g. Ctrl+K to cut, Ctrl+U to paste.  I have moved towards using <a href="https://micro-editor.github.io/">micro</a> as a text editor.  For me it has the right level of functionality and the shortcuts are more familiar to me, e.g. CTRL+s to save, CTRL+c to copy, CTRL+v to paste.  You can even easily choose different themes.</p>
+<p>While I have enjoyed using and learning <strong>micro</strong>, the biggest surprise I have had with the editor is that I was unable to copy text from micro into another external application.  Apparently micro has its own internal clipboard for copying and pasting, which cannot be used outside the editor.  I am currently using the Hyprland and Sway, which are window managers that use Wayland as a compositor.  To get the copy &amp; paste function to work, you will need to install an external clipboard manager, i.e. <a href="https://github.com/bugaevc/wl-clipboard">wl-clipboard</a>.  To do this on <strong>Arch</strong>:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> pacman<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>S</span> wl-clipboard</span>
+</span></code></pre>
+<p>With <strong>wl-clipboard</strong> installed some changes need to be made to the settings in <strong>micro</strong>.  Using a text editor such as micro (!!) you can open and then edit the settings file.  To open the file:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">micro</span></span><span class="z-meta z-function-call z-arguments z-shell"> .config/micro/settings.json</span>
+</span></code></pre>
+<p>Within the opened file, add between the <strong>{ }</strong> brackets the following:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-punctuation z-definition z-compound z-braces z-begin z-shell">{</span>
+</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>clipboard<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>:</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>external<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+</span><span class="z-source z-shell z-bash"><span class="z-punctuation z-definition z-compound z-braces z-end z-shell">}</span>
+</span></code></pre>
+<p>My full settings file looks as follows:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-punctuation z-definition z-compound z-braces z-begin z-shell">{</span>
+</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>colorscheme<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>:</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>catppuccin-latte<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>,</span>
+</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>clipboard<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>:</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>external<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>,</span>
+</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>softwrap<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>:</span></span><span class="z-meta z-function-call z-arguments z-shell"> true</span>
+</span><span class="z-source z-shell z-bash"><span class="z-punctuation z-definition z-compound z-braces z-end z-shell">}</span>
+</span></code></pre>
+<p>The only difference from the previous is that there is a <strong>comma</strong> at the end of the line, since it is not the end of the settings.</p>
+
+    </div>
+    
+
+    
+</article>
+
+
+    <footer>
+        <p>
+            
+<span class="icon-text">
+  
+
+  
+
+  
+  <a href="https://github.com/dajhub" aria-label="Open dajhub GitHub" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-github fa-lg" aria-hidden="true" title="GitHub"></i>
+    </span>
+  </a>
+  
+
+  
+  <a href="https://gitlab.com/dajhub" aria-label="Open dajhub GitLab" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-gitlab fa-lg" aria-hidden="true" title="GitLab"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:dajhub63@gmail.com" aria-label="Email dajhub63@gmail.com" target="_blank">
+    <span class="icon is-large">
+      <i class="far fa-envelope fa-lg" aria-hidden="true" title="email"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+</span>
+
+        </p>
+        <p>
+            
+            
+        </p>
+    </footer>
+</div>
+</body>
+</html>

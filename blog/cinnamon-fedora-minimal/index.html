@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>Fedora: Minimal Cinnamon Desktop Install - dajhub</title>
+    <meta name="description" content="Welcome to my blog where, as a Linux enthusiast, I share my tips with you. I hope you find something that is useful.">
+
+    
+    <link rel="stylesheet" href="https://dajhub.co.uk/base.css">
+    <link rel="stylesheet" href="https://dajhub.co.uk/auto.css">
+
+    <link rel="preload" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.3.0&#x2F;css&#x2F;all.min.css as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.3.0&#x2F;css&#x2F;all.min.css></noscript>
+
+    
+
+    
+    
+    <meta property="og:locale" content="en_GB">
+    
+    <meta property="og:title" content="Fedora: Minimal Cinnamon Desktop Install">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://dajhub.co.uk/about/">
+    <meta property="article:published_time" content="2024-10-04">
+    
+    
+    <meta property="article:tag" content="desktop">
+    
+    <meta property="article:tag" content="fedora">
+    
+    <meta property="article:tag" content="cinnamon">
+    
+    
+    
+    
+    <meta property="og:url" content="https://dajhub.co.uk/blog/cinnamon-fedora-minimal/">
+    
+    
+    <meta property="og:description" content="Fedora offers a specific spin for Cinnamon Desktop but if you are looking for a more minimal install which doesn&#x27;t include, for example, dnfdragora, LibrOffice, HexChat, Pidgin, Thunderbird, Transmission, Rhythmbox, XawTV Television Viewer, etc., then this post might be of interest.
+">
+    
+
+
+    
+    
+</head>
+<body>
+<div class="container">
+    
+    
+    <header>
+        <h1 class="site-header">
+            <a href="https:&#x2F;&#x2F;dajhub.co.uk"><img src="&#x2F;logo.png" alt="logo" width="42" height="42">
+            <href="https:&#x2F;&#x2F;dajhub.co.uk">::
+            <href="https:&#x2F;&#x2F;dajhub.co.uk">dajhub
+            </a>
+        </h1>
+        <nav>
+            <ul>
+            
+            
+                
+                <li><a class="active" href="https:&#x2F;&#x2F;dajhub.co.uk&#x2F;blog">Blog</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;dajhub.co.uk&#x2F;tags">Tags</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;dajhub.co.uk&#x2F;about">About</a></li>
+            
+            
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+<article class="post">
+    
+    
+    
+        
+        <header>
+            <h1>Fedora: Minimal Cinnamon Desktop Install</h1>
+        </header>
+        
+        
+    <div class="article-info">
+        
+        
+        <div class="article-date">October  4, 2024 ◦ 2 min ◦ </div>
+        
+        <div class="article-taxonomies">
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://dajhub.co.uk/tags/desktop/">#desktop</a></li>
+                    
+                    <li><a href="https://dajhub.co.uk/tags/fedora/">#fedora</a></li>
+                    
+                    <li><a href="https://dajhub.co.uk/tags/cinnamon/">#cinnamon</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+        
+        <header>
+            <h2 class="post-summary">Fedora offers a specific spin for Cinnamon Desktop but if you are looking for a more minimal install which doesn't include, for example, dnfdragora, LibrOffice, HexChat, Pidgin, Thunderbird, Transmission, Rhythmbox, XawTV Television Viewer, etc., then this post might be of interest.
+</h2>
+        </header>
+    
+    
+    <div class="content">
+        <span id="continue-reading"></span>
+<p><img src="https://dajhub.co.uk/blog/cinnamon-fedora-minimal/desktop.webp" alt="cinnamon-desktop" /></p>
+<h1 id="a-minimal-install">A Minimal Install<a class="zola-anchor" href="#a-minimal-install" aria-label="Anchor link for: a-minimal-install">
+    <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+        </path>
+    </svg>
+</a>
+</h1>
+<p>To make a minimal Fedora install you will need to download the iso from the <strong>Fedora Everything</strong> <a href="https://fedoraproject.org/everything/download">page</a>.  The Fedora installer takes you through the installation process in clear steps.  Importantly, when you get to the page/step shown below ensure that you only select *<strong>Minimal Install</strong>.</p>
+<p><img src="https://dajhub.co.uk/blog/cinnamon-fedora-minimal/minimal-install.webp" alt="fedora-minimal" /></p>
+<p>With the installation complete, reboot and login with your username and password. To install the basic Cinnamon desktop you need to install the following:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> dnf install cinnamon<span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span> @base-x</span>
+</span></code></pre>
+<p>You will also want to install some essentials, e.g.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> dnf install nemo-fileroller gnome-terminal firefox</span>
+</span></code></pre>
+<h1 id="display-manager">Display Manager<a class="zola-anchor" href="#display-manager" aria-label="Anchor link for: display-manager">
+    <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+        </path>
+    </svg>
+</a>
+</h1>
+<p>The display manager or login manager is where you input your username and password to get to your desktop.  The display manager I use is <a href="https://github.com/sddm/sddm">sddm</a>, which is the default for KDE. The Cinnamon default is <a href="https://github.com/linuxmint/slick-greeter">slick-greeter</a>. Installing and enable either option is shown below.  For sddm,</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> dnf install sddm</span>
+</span></code></pre>
+<p>or for slick-greeter</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> dnf install lightdm slick-greeter</span>
+</span></code></pre>
+<h2 id="enabling-the-display-manager">Enabling the Display Manager<a class="zola-anchor" href="#enabling-the-display-manager" aria-label="Anchor link for: enabling-the-display-manager">
+    <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+        </path>
+    </svg>
+</a>
+</h2>
+<p>You will need to enable your chosen display manager. For <strong>sddm</strong>:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> enable sddm</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> set-default graphical.target</span>
+</span></code></pre>
+<p><img src="https://dajhub.co.uk/blog/cinnamon-fedora-minimal/sddm.webp" alt="sddm" /></p>
+<p>Not the most attractive display manager!!  However, the layout/look can be improved and may be the content for a future post.</p>
+<p>To enable <strong>slick greeter</strong></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> enable lightdm</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> set-default graphical.target</span>
+</span></code></pre>
+<p><img src="https://dajhub.co.uk/blog/cinnamon-fedora-minimal/slick-greeter.webp" alt="slick-greeter" /></p>
+<p>You can now reboot into your display manager and login to your desktop.  To do this,</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">reboot</span></span>
+</span></code></pre>
+<h1 id="connecting-to-wi-fi">Connecting to Wi-Fi<a class="zola-anchor" href="#connecting-to-wi-fi" aria-label="Anchor link for: connecting-to-wi-fi">
+    <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+        </path>
+    </svg>
+</a>
+</h1>
+<p>If you are installing the desktop onto a laptop then you might also need to connect to Wi-Fi.  In a terminal,</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> dnf install NetworkManager-wifi iwl<span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span></span>
+</span></code></pre>
+<p>You may need to reboot for the changes to take effect.</p>
+
+    </div>
+    
+
+    
+</article>
+
+
+    <footer>
+        <p>
+            
+<span class="icon-text">
+  
+
+  
+
+  
+  <a href="https://github.com/dajhub" aria-label="Open dajhub GitHub" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-github fa-lg" aria-hidden="true" title="GitHub"></i>
+    </span>
+  </a>
+  
+
+  
+  <a href="https://gitlab.com/dajhub" aria-label="Open dajhub GitLab" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-gitlab fa-lg" aria-hidden="true" title="GitLab"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:dajhub63@gmail.com" aria-label="Email dajhub63@gmail.com" target="_blank">
+    <span class="icon is-large">
+      <i class="far fa-envelope fa-lg" aria-hidden="true" title="email"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+</span>
+
+        </p>
+        <p>
+            
+            
+        </p>
+    </footer>
+</div>
+</body>
+</html>
