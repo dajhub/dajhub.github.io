@@ -37,7 +37,7 @@ root   ALL=(ALL:ALL) ALL
 
 You then want to add an additional line (i.e. `david ALL=(ALL) ALL`) to provide yourself with sudo privileges.  Your user name will obviously be different from mine but the entry should look something like this,
 
-![sudoer-added](sudoer-added.png)
+![sudoer-added](sudoer-added.webp)
 
 You can then save (CTRL+O) and exit (CTRL+X).
 
