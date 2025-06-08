@@ -3,7 +3,7 @@ title = "Latest Posts"
 
 
 [extra]
-header = {title = "Welcome ::", img = "img/logo.webp", img_alt = "dajhub"}
+header = {title = "Welcome ::"}
 section_path = "blog/_index.md"  
 max_posts = 4
 +++

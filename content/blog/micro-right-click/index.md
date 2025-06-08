@@ -1,14 +1,13 @@
 +++
-title = "Micro Text Editor: Right Click a File in Thunar to Open in Micro"
+title = "Micro Text Editor: Opening Micro through Thunar file manager"
 date = "2025-05-30"
+description = "Configuring Thunar so that Micro editor can open with a right click" 
 [taxonomies]
 tags = ["software"]
 +++
 
-
 Using the Micro text editor has been a joy, but it does require sorting a few things to make it comfortable to use.  A problem I came across was in the file manager Thunar when I right-clicked on a file to open it in the Micro editor, I would get an error message "Unable to find terminal required for application".
 
-<!-- more -->
 
 ![error message](micro-editor.webp)
 
