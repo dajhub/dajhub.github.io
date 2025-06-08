@@ -1,0 +1,38 @@
+@use "syntax-theme-light";
+
+@mixin theme($theme: light) {
+    --background-color: rgb(251, 251, 252);
+    --header-background-color: rgb(229, 233, 240);
+    --text-color: rgb(51, 51, 51);
+    --text-accent-color: rgb(117, 117, 117);
+    --border-color: rgb(195, 195, 195);
+    --link-color: rgb(0,109,206);
+    --link-hover-color: rgb(29, 163, 136);
+    --link-hover-line-color: rgb(0, 120, 132);
+    --icon-hover-color: var(--link-hover-color);
+    --icon-color: var(--text-color);
+    --code-background: rgb(229, 233, 240);
+    --table-header-background-color: var(--header-background-color);
+
+    --callout-text-color: rgb(46, 52, 64);
+    --callout-border-radius: 0px;
+    --callout-note-color-border: rgb(255, 234, 0);
+    --callout-note-color-background: rgb(255, 250, 204);
+    --callout-important-color-border: rgb(255, 165, 0);
+    --callout-important-color-background: rgb(255, 237, 204);
+    --callout-warning-color-border: rgb(204,23,41);
+    --callout-warning-color-background: rgb(249, 231, 233);
+    --callout-alert-color-border: rgb(204,23,41);
+    --callout-alert-color-background: rgb(249, 231, 233);
+    --callout-question-color-border: rgb(130,93,192);
+    --callout-question-color-background: rgb(242, 238, 248);
+    --callout-tip-color-border: rgb(66,139,0);
+    --callout-tip-color-background: rgb(236, 243, 229);
+}
+
+:root {
+    @include theme($theme: light);
+    @include syntax-theme-light.light;
+}
+
+
