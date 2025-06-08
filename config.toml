@@ -9,6 +9,10 @@ build_search_index = true
 
 theme = "tabi"
 
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+
 taxonomies = [
     {name = "tags", feed = true},
 ]
@@ -28,7 +32,7 @@ theme_switcher = true
 default_theme = ""
 
 # Skin available: blue, lavender, mint, red, sakura, teal, monochrome, indigo_ingot, evangelion
-skin = "indigo_ingot"
+skin = "solarized"
 
 # List additional stylesheets to load site-wide.
 # These stylesheets should be located in your site's `static` directory.
