@@ -1,13 +1,13 @@
  +++
 title = "Changing the SDDM Display Manager (non-KDE)"
 date = "2025-05-29"
+description = "How to theme and edit a SDDM theme." 
 [taxonomies]
 tags = ["display manager", "software"]
 +++
 
 While I do not use the KDE desktop I do like its display manager, SDDM.  The default SDDM theme is not, in my opinion, very visually appealing (see image below) but it can be changed.  This post looks at how we can change the theme and then edit it to our liking.  I am currently using Arch but there will be similarities with other Linux Distribution such as Fedora and Debian.
 
-<!-- more -->
 
 # Installing the SDDM Display Manager
 

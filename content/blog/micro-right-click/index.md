@@ -1,7 +1,7 @@
 +++
 title = "Micro Text Editor: Opening Micro through Thunar file manager"
 date = "2025-05-30"
-description = "Configuring Thunar so that Micro editor can open with a right click" 
+description = "Configuring Thunar so that a file can be opened in Micro editor with a right click" 
 [taxonomies]
 tags = ["software"]
 +++
