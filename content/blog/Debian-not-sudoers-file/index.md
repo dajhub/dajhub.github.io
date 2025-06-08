@@ -12,7 +12,8 @@ What do you do if you get the message **"Username is not in the sudoers file. Th
 
 It may be that having installed a new Debian desktop (in my case XFCE4) and you try to update (i.e. "**$ sudo apt update && sudo apt upgrade**") you end up with the following error message:
 
-![sudoers-error](https://i.imgur.com/RlbbBol.png)
+![sudoers-error](sudoer-error.webp)
+
 
 The message is just a warning on your local machine.  It shows that you attempted to gain root access and were not an authorised user.  To add yourself to the sudoers file you will firstly need, through your terminal, to login as root, i.e.
 
@@ -33,11 +34,11 @@ Scroll down to this entry,
 root   ALL=(ALL:ALL) ALL
 ```
 
-![sudoers-nano](https://i.imgur.com/lFqeTl3.png)
+![sudoers-nano](sudoer-nano.webp)
 
 You then want to add an additional line (i.e. `david ALL=(ALL) ALL`) to provide yourself with sudo privileges.  Your user name will obviously be different from mine but the entry should look something like this,
 
-![sudoer-added](https://i.imgur.com/AuLn3RC.png)
+![sudoer-added](sudoer-added.png)
 
 You can then save (CTRL+O) and exit (CTRL+X).
 

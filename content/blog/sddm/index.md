@@ -1,4 +1,4 @@
-+++
+ +++
 title = "Changing the SDDM Display Manager (non-KDE)"
 date = "2025-05-29"
 [taxonomies]
@@ -20,15 +20,6 @@ sudo pacman -S sddm
 sudo systemctl enable sddm.service
 ```
 
-{% tip(header="Important") %}
-
-The above commands assume there is no other display manager installed.  If, for example, you have gdm installed, then you would need to force sddm as your display manager.  The **systemctl** command would now be:
-
-```bash
-sudo systemctl enable sddm.service -f
-```
-
-{% end %}
 
 # Changing the SDDM Theme
 
@@ -212,7 +203,7 @@ The contents of the **original** file:
 
 The changes I then made to the above config file:
 
-```bash
+```text
 line 21 BgSource="backgrounds/light-blue-layers.jpg" #changed the background
 line 41 UserPictureEnabled=false #removes the login image/picture
 line 62 InputColor="#b4befe"

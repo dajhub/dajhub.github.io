@@ -12,7 +12,7 @@ tags = ["fedora","software"]
 
 Peek has an easy to use interface.  Once installed you open the app, position the see through frame over the part of the screen you want to record, and then press the record button...an example...
 
-![gif](https://i.imgur.com/fpcy0ye.gif#center)
+![peek](peek.gif)
 
 When you have finished recording you press 'stop' and finally give the .gif file a name.
 

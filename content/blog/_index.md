@@ -1,10 +1,11 @@
 +++
-title = "Blog"
-
+title = "All posts"
 sort_by = "date"
-paginate_by = 10
-render = true
-template = "blog.html"
-
+paginate_by = 5
+template = "section.html"
 insert_anchor_links = "right"
+
+[extra]
+quick_navigation_buttons = true
+show_previous_next_article_links = true
 +++
