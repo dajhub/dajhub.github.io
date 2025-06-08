@@ -36,7 +36,7 @@ skin = "indigo_ingot"
 # You can load a stylesheet for a single post by adding it to the [extra] section of the post's front matter, following this same format.
 stylesheets = []
 
-# remote_repository_url = "https://github.com/welpo/tabi"
+remote_repository_url = "https://github.com/dajhub/dajhub.github.io"
 # Set this to "auto" to try and auto-detect the platform based on the repository URL.
 # Accepted values are "github", "gitlab", "gitea", and "codeberg".
 remote_repository_git_platform = "auto"  # Defaults to "auto".
