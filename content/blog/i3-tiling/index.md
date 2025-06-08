@@ -8,8 +8,6 @@ tags = ["fedora","i3","window manager"]
 
 i3 is a great tiling window manager which automatically places your windows in vertical columns.  However, it is fairly straight foward to move to a spiral layout. 
 
-<!-- more -->
-
 The default tiling for i3 looks like:
 
 ![i3-tiling-original](i3-tiling-orig.webp)

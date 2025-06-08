@@ -1,13 +1,13 @@
 +++
 title = "Fedora: Minimal Cinnamon Desktop Install"
 date = "2024-10-04"
+description = "Using Fedora spins to make a more lightweight installation" 
 [taxonomies]
 tags = ["desktop", "fedora", "cinnamon"]
 +++
 
 Fedora offers a specific spin for [Cinnamon Desktop](https://fedoraproject.org/spins/) but if you are looking for a more minimal install which doesn't include, for example, dnfdragora, LibrOffice, HexChat, Pidgin, Thunderbird, Transmission, Rhythmbox, XawTV Television Viewer, etc., then this post might be of interest.
 
-<!-- more -->
 
 ![cinnamon-desktop](desktop.webp)
 

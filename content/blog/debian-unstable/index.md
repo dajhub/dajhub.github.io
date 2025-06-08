@@ -1,13 +1,12 @@
 +++
 title =  "Moving to Debian Unstable"
 date =   "2024-08-05"
+description = "An option if you are looking for more up-to-date software."
 [taxonomies]
 tags = ["debian"]
 +++
 
 Debian is often chosen for its stability and for a system that just works.  However, that stability often means that packages can become out of date.  Moving to the **unstable** branch might be an option.
-
-<!-- more -->
 
 Debian Unstable will provide you with newer packages, but there are inherent risks of breakages, since the packages have not been fully tested. If you do move to Unstable, it's probably best not to do it on a critical machine where you need guaranteed stability. With that said, the steps to move from Debian Stable to Unstable:
 

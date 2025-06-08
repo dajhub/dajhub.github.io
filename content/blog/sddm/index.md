@@ -1,7 +1,7 @@
  +++
 title = "Changing the SDDM Display Manager (non-KDE)"
 date = "2025-05-29"
-description = "How to theme and edit a SDDM theme." 
+description = "How to install and edit an SDDM theme." 
 [taxonomies]
 tags = ["display manager", "software"]
 +++
@@ -21,7 +21,7 @@ sudo systemctl enable sddm.service
 ```
 
 
-# Changing the SDDM Theme
+# Install an SDDM Theme
 
 I have found the [sddm corners theme](https://github.com/aczw/sddm-theme-corners) easy to install (in a non-KDE environment) and also easy to edit.  Instructions for installation can be found on their [site](https://github.com/aczw/sddm-theme-corners?tab=readme-ov-file#installation).  The theme can be found in Arch's AUR. To install:
 

@@ -1,13 +1,10 @@
 +++
 title = "Micro Text Editor - Copy and Paste Functionality in Wayland"
 date = "2025-05-27"
+description = "How to enable the external copy and paste function within the **micro** text editor." 
 [taxonomies]
 tags = ["window manager", "software"]
 +++
-
-This post looks at how to enable the external copy and paste function within the **micro** text editor.
-
-<!-- more -->
 
 I am not a developer or system administrator and have never really come to terms with the editors **vim** or **neovim**.  They are undoubtably configurable and efficient, but I do not use them enough to get to that "efficient" level. I am sure they would be great if you were using frequently, day in day out.   I have also used **nano** which is fine, but I have struggled to remember the shortcuts which do not always seem logical for me, e.g. Ctrl+K to cut, Ctrl+U to paste.  I have moved towards using [micro](https://micro-editor.github.io/) as a text editor.  For me it has the right level of functionality and the shortcuts are more familiar to me, e.g. CTRL+s to save, CTRL+c to copy, CTRL+v to paste.  You can even easily choose different themes.
 
