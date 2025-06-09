@@ -41,16 +41,10 @@ skin = "solarized"
 stylesheets = []
 
 remote_repository_url = "https://github.com/dajhub/dajhub.github.io"
-# Set this to "auto" to try and auto-detect the platform based on the repository URL.
-# Accepted values are "github", "gitlab", "gitea", and "codeberg".
 remote_repository_git_platform = "github"  # Defaults to "auto".
-# Branch in the repo hosting the Zola site.
-remote_repository_branch = "main"  # Defaults to "main".
-# Show a link to the commit history of updated posts, right next to the last updated date.
-# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
-show_remote_changes = true  # Defaults to true.
-# Show a link to the repository of the site, right next to the "Powered by Zola & tabi" text.
-show_remote_source = true  # Defaults to true.
+remote_repository_branch = "main"  
+show_remote_changes = true  
+show_remote_source = true  
 
 # Add a "copy" button to codeblocks.
 copy_button = true
@@ -62,7 +56,7 @@ code_block_name_links = false
 # Force left-to-right (LTR) direction for code blocks.
 # Set to false to allow code to follow the document's natural direction.
 # Can be set at page or section levels. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
-force_codeblock_ltr = true
+force_codeblock_ltr = false
 
 # Show the author(s) of a page.
 show_author = false
