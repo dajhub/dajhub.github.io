@@ -50,111 +50,55 @@ show_remote_source = true
 copy_button = true
 
 # Make code block names clickable if they are URLs (loads ~400 bytes of JavaScript).
-# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 code_block_name_links = false
 
-# Force left-to-right (LTR) direction for code blocks.
-# Set to false to allow code to follow the document's natural direction.
-# Can be set at page or section levels. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 force_codeblock_ltr = true
 
-# Show the author(s) of a page.
 show_author = false
 
-# Show the reading time of a page.
 show_reading_time = true
 
-# Show the date of a page below its title.
 show_date = true
 
-# Determines how dates are displayed in the post listing (e.g. front page or /blog). Options:
-# "date" - Show only the original date of the post (default if unset).
-# "updated" - Show only the last updated date of the post. If there is no last updated date, it shows the original date.
-# "both" - Show both the original date and the last updated date.
-post_listing_date = "date"
+post_listing_date = "date" # Could also be "updated" or "both"
 
-# Show "Jump to posts" link next to series' title.
-# By default, the link appears automatically when a series description exceeds 2000 characters.
-# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
-# show_jump_to_posts = true
-
-# Determines if indexes should be increasing (false) or decreasing (true) in series' posts list.
-# It has only effect if the section uses indexes metadata (which is only the case for series as of now).
-# Can be set at section levels, following the hierarchy: section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 post_listing_index_reversed = false  # Defaults to false.
 
-# DEPRECATED!
-# Use Zola's built-in `bottom_footnotes = true` in the [markdown] section instead. (Available since v0.19.0)
-# Adds backlinks to footnotes (loads ~500 bytes of JavaScripts).
 footnote_backlinks = false
-
 
 katex = false
 
-# Enable Mermaid diagrams for all posts.
 mermaid = false
 
-# Serve Mermaid JavaScript locally. Version bundled with tabi.
-# If set to false, it will load the latest version from JSDelivr.
-# Only relevant when `mermaid = true`.
 serve_local_mermaid = true
 
-# Show links to previous and next articles at the bottom of posts.
-# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 show_previous_next_article_links = false
 
-# Invert order of the links to previous and next articles at the bottom of posts.
-# By default, next articles are on the left side of the page and previous articles are on the right side.
-# To reverse the order (next articles on the right and previous articles on the left), set it to true.
-# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 invert_previous_next_article_links = false
 
-# Whether the navigation for previous/next article should match the full width of the site (same as the navigation bar at the top) or the article width.
-# To match the navigation bar at the top, set it to true.
 previous_next_article_links_full_width = true
 
-# Quick navigation buttons.
-# Adds "go up" and "go to comments" buttons on the bottom right (hidden for mobile).
-# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 quick_navigation_buttons = false
 
 # Add a Table of Contents to all posts, right below the title and metadata.
 # Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 # toc = false
 
-# Date format used when listing posts (main page, /blog section, tag posts list…)
-# Default is "6th July 2049" in English and "%d %B %Y" in other languages.
-# long_date_format = "%d %B %Y"
 
-# Date format used for blog posts.
-# Default is "6th July 2049" in English and "%-d %B %Y" in other languages.
 short_date_format = ""
 
-# Custom separator used in title tag and posts metadata (between date, time to read, and tags).
-separator = "•"
+separator = "•" # Used in title tag and posts metadata (between date, time to read, and tags)
 
-# Use a shorter layout for All tags listing.
-# Default: tag_name – n post[s]
-# Compact: tag_name^n (superscript number)
 compact_tags = false
 
-# How tags are sorted in a Tags listing based on templates/tags/list.html.
-# "name" for alphabetical, "frequency" for descending count of posts.
-# Default: "name".
-tag_sorting = "name"
+tag_sorting = "name" # Could also be "frequency"
 
-# Show clickable tags above cards.html template (e.g. projects/) to filter the displayed items.
-# Loads JS to filter. If JS is disabled, the buttons are links to the tag's page.
-# Can be set at the section or config.toml level, following the hierarchy: section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
-# Default: true
 enable_cards_tag_filtering = true
 
-# Invert the order of the site title and page title in the browser tab.
-# Example: true => "Blog • ~/tabi", false => "~/tabi • Blog"
 invert_title_order = false
 
 # Full path after the base URL required. So if you were to place it in "static" it would be "/favicon.ico"
-favicon = "/favicon.ico"
+favicon = "/favicon.ico" # Placed in "static"
 
 # Add an emoji here to use it as favicon.
 # Compatibility: https://caniuse.com/link-icon-svg
@@ -173,22 +117,13 @@ menu = [
 #    { name = "projects", url = "projects", trailing_slash = true },
 ]
 
-# The RSS icon will be shown if (1) it's enabled and (2) the following variable is set to true.
-# Note for Zola 0.19.X users: when `feed_filenames` has two filenames, only the first one will be linked in the footer.
 feed_icon = true
 
-# Show the full post content in the Atom feed.
-# If it's set to false, only the description or summary will be shown.
 full_content_in_feed = false
 
-# Email address for footer's social section.
-# Protect against spambots:
-# Use base64 for email (convert at https://www.base64encode.org/ or `printf 'your@email.com' | base64`).
 encode_plaintext_email = true  # Setting is ignored if email is already encoded.
-email = "ZGFqaHViNjNAZ21haWwuY29t"
+email = "ZGFqaHViNjNAZ21haWwuY29t" # Convert at https://www.base64encode.org/
 
-# Social media links for the footer.
-# To use a custom icon, add it to your site's `static/social_icons` directory.
 socials = [
     { name = "github", url = "https://github.com/dajhub/", icon = "github" },
     { name = "gitlab", url = "https://gitlab.com/dajhub/", icon = "gitlab" },
@@ -201,18 +136,11 @@ socials = [
 footer_menu = [
 #     {url = "about", name = "about", trailing_slash = true},
 #     {url = "privacy", name = "privacy", trailing_slash = true},
-     {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
+      {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
 #     {url = "https://example.com", name = "external link", trailing_slash = true},
 ]
 
 
-# Custom security headers. What urls should your website be able to connect to?
-# You need to specify the CSP and the URLs associated with the directive.
-# Useful if you want to load remote content safely (embed YouTube videos, which needs frame-src, for example).
-# Default directive is self.
-# Default config, allows for https remote images and embedding YouTube and Vimeo content.
-# This configuration (along with the right webserver settings) gets an A+ in Mozilla's Observatory: https://observatory.mozilla.org
-# Note: to use a Zola built-in syntax highlighting theme, allow unsafe-inline for style-src.
 allowed_domains = [
     { directive = "font-src", domains = ["'self'", "data:"] },
     { directive = "img-src", domains = ["'self'", "https://*", "data:"] },
@@ -222,19 +150,13 @@ allowed_domains = [
     { directive = "frame-src", domains = ["player.vimeo.com", "https://www.youtube-nocookie.com"] },
 ]
 
-# Enable the CSP directives configured (or default).
-# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 enable_csp = true
 
-# Font subsetting configuration.
-# This feature helps prevent text flashing in Firefox when using custom fonts.
-# See: https://welpo.github.io/tabi/blog/custom-font-subset/
-# Enable or disable font subsetting completely, both built-in and custom subsets.
-enable_subset = true
-# Use a custom subset of characters for the header.
 # If true, tabi will load the `static/custom_subset.css` file.
 # If false, tabi will use the default language-specific subset (English or Spanish).
 custom_subset = true
+
+
 
 [extra.analytics]
 # Specify which analytics service you want to use.
