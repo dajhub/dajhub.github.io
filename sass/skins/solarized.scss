@@ -3,7 +3,7 @@
     @if $theme =='light' {
         // Light theme colours.
         --background-color: #FEFBF6;
-        --primary-color:  #0000B8; // Contrast ratio: 12.41:1  original solarized #0054CF Contrast ratio: 6.62:1
+        --primary-color:  #0000B8; // #0000B8 Contrast ratio: 12.41:1  original solarized #0054CF Contrast ratio: 6.62:1
         --codeblock-bg: #282828;
     }
     @else if $theme == 'dark' {
