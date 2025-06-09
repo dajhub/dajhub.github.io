@@ -56,7 +56,7 @@ code_block_name_links = false
 # Force left-to-right (LTR) direction for code blocks.
 # Set to false to allow code to follow the document's natural direction.
 # Can be set at page or section levels. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
-force_codeblock_ltr = false
+force_codeblock_ltr = true
 
 # Show the author(s) of a page.
 show_author = false
