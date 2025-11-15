@@ -1,0 +1,1 @@
+:root{--primary-color: #00804d;--codeblock-bg: #282828}[data-theme=dark]{--background-color: #002B36;--primary-color: #EBC13D;--codeblock-bg: #184956}@media (prefers-color-scheme: dark){:root:not([data-theme=light]){--background-color: #002B36;--primary-color: #EBC13D;--codeblock-bg: #184956}}

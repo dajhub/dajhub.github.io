@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://dajhub.co.uk/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <tabi:metadata xmlns:tabi="https://github.com/welpo/tabi">
+        <tabi:base_url>https:&#x2F;&#x2F;dajhub.co.uk</tabi:base_url>
+        <tabi:separator>
+            •
+        </tabi:separator>
+        <tabi:about_feeds>This is a web feed, also known as an Atom feed. Subscribe by copying the URL from the address bar into your newsreader. Visit About Feeds to learn more and get started. It&#x27;s free.</tabi:about_feeds>
+        <tabi:visit_the_site>Visit website</tabi:visit_the_site>
+        <tabi:recent_posts>Recent posts</tabi:recent_posts>
+        <tabi:last_updated_on>Updated on $DATE</tabi:last_updated_on>
+        <tabi:default_theme></tabi:default_theme>
+        <tabi:post_listing_date>date</tabi:post_listing_date>
+        <tabi:current_section>cinnamon</tabi:current_section>
+    </tabi:metadata><link rel="extra-stylesheet" href="https://dajhub.co.uk/skins/solarized.css?h=0c1033ff3ba4cc91887a" /><title>dajhub - cinnamon</title>
+        <subtitle>Welcome to my blog where, as a Linux enthusiast, I share my tips with you. I hope you find something that is useful. </subtitle>
+    <link href="https://dajhub.co.uk/tags/cinnamon/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://dajhub.co.uk/tags/cinnamon/" rel="alternate" type="text/html"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-10-04T00:00:00+00:00</updated>
+    <id>https://dajhub.co.uk/tags/cinnamon/atom.xml</id><entry xml:lang="en">
+        <title>Fedora: Minimal Cinnamon Desktop Install</title>
+        <published>2024-10-04T00:00:00+00:00</published>
+        <updated>2024-10-04T00:00:00+00:00</updated>
+        <author>
+            <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://dajhub.co.uk/blog/cinnamon-fedora-minimal/" type="text/html"/>
+        <id>https://dajhub.co.uk/blog/cinnamon-fedora-minimal/</id>
+        <summary type="html">Using Fedora spins to make a more lightweight installation</summary>
+        </entry>
+</feed>
