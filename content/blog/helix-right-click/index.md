@@ -16,7 +16,7 @@ As with the Micro text editor a couple of problems I came across were:
 2. Copying text from Helix into another application.
 
 
-## SOLUTION: Opening a file from Thunar into Helix
+### SOLUTION: Opening a file from Thunar into Helix
 
 
 - Find where helix is installed with this command:
@@ -38,6 +38,8 @@ As with the Micro text editor a couple of problems I came across were:
   ```bash
   Exec=kitty -e /usr/lib/helix/hx %F
   ```
+  
+  {{ admonition(type="note", text="You mat need to change `/usr/lib/helix/hx` depending on the file location of helix.") }}
 
   When you have saved the file (ctrl+O and ctrl+x to exit) you can then update the desktop database:
 
@@ -48,7 +50,7 @@ As with the Micro text editor a couple of problems I came across were:
   If you then reload thunar and then right-click a file → Open With → Helix, kitty should open correctly and run /usr/lib/helix/hx.
 
 
-## SOLUTION: Copying a piece of text from Helix into another application
+### SOLUTION: Copying a piece of text from Helix into another application
 
 - As I am using Sway and Hyprland you need to ensure that wl-clipboard is installed:
 
