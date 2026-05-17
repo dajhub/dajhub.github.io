@@ -39,7 +39,7 @@ As with the Micro text editor a couple of problems I came across were:
 
   Within the file find the line that starts `Exec=` and edit it so that it now contains the following:
 
-  ```bash
+  ```plain
   Exec=kitty -e /usr/lib/helix/hx %F
   ```
 <br>

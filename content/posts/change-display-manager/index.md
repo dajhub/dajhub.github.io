@@ -30,13 +30,13 @@ $ sudo nano /etc/lightdm/lightdm.conf
 
 Once opened, scroll down to the line [Seat:*]. About sixteen lines below this you will see a line which looks like:
 
-```
+```plain
 greeter-session=lightdm-gtk-greeter
 ```
 
 The line needs to be changed to:
 
-```bash
+```plain
 greeter-session=lightdm-slick-greeter
 ```
 
@@ -50,7 +50,7 @@ $ sudo nano /etc/lightdm/slick-greeter.conf
 
 The file will not exist, so nano will create it.  You can then add the following lines (source: https://github.com/linuxmint/slick-greeter) to slick-greeter.conf.
 
-```bash
+```plain
 # LightDM GTK+ Configuration
 # Available configuration options listed below.
 #

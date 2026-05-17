@@ -28,7 +28,7 @@ $ nano /etc/sudoers
 
 Scroll down to this entry,
 
-```bash
+```plain
 #User privilege specification
 root   ALL=(ALL:ALL) ALL
 ```

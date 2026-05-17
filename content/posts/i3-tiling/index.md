@@ -39,7 +39,7 @@ To achieve this spiral tiling, Piotr Miller has created a fantastic script which
 
 4. To ensure that autotiling starts when i3 loads, we need to add the following script to our `config` file which is located in `~/.config/i3/`.
 
-	```bash
+	```plain
 	# autotiling script
 	exec_always --no-startup-id autotiling
 	```
