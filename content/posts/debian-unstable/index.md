@@ -19,7 +19,7 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
 
 2. In the `sources.list` there needs to be only two entries (see screenshot below):
 
-    ```bash
+    ```plain
     deb http://deb.debian.org/debian/ unstable main non-free-firmware
     deb-src http://deb.debian.org/debian/ unstable main non-free-firmware
     ```
@@ -35,8 +35,9 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
     ```
 
     This may take some time.  
-       
-         
+
+ <br>      
+        
 > __<span style="color:red;">Tip: Avoiding bugs</span>__
 > 
 > In order to make your life easier in the Unstable version install (**see code block below**) the apt-listbugs and apt-listchanges packages so that you are notified "*of grave bugs or important changes when you install new packages or during an upgrade.*" <sup>[1](#debian_unstable)</sup>
@@ -48,7 +49,9 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
 > sudo apt update && sudo apt install apt-listbugs apt-listchanges
 > ```
 
----
+<br>
+
+------
 
 **Sources:**
 
