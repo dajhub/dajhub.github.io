@@ -40,7 +40,7 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
         
 > __<span style="color:red;">Tip: Avoiding bugs</span>__
 > 
-> In order to make your life easier in the Unstable version install (**see code block below**) the apt-listbugs and apt-listchanges packages so that you are notified "*of grave bugs or important changes when you install new packages or during an upgrade.*" <sup>[1](#debian_unstable)</sup>
+> In order to make your life easier in the Unstable version, install (**see code block below**) the apt-listbugs and apt-listchanges packages so that you are notified "*of grave bugs or important changes when you install new packages or during an upgrade.*" <sup>[1](#debian_unstable)</sup>
 > 
 > There is additional debian guidance for Unstable/Sid user which it is worth taking note of in the link below.
 > 
