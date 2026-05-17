@@ -10,12 +10,12 @@
 
                     <div class="meta">
                         {% if page.date %}
-                            Posted on <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+                            Posted on <time>{{ page.date | date(format="%d-%b-%Y") }}</time>
                         {% endif %}
 
 
                         {% if page.updated %}
-                            :: Updated on <time>{{ page.updated | date(format="%Y-%m-%d") }}</time>
+                            :: Updated on <time>{{ page.updated | date(format="%d-%b-%Y") }}</time>
                         {% endif %}
 
                         {% if page.extra.read_time %}
