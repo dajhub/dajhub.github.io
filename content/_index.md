@@ -21,10 +21,24 @@ section_path = "posts/_index.md"
     margin-bottom: 1rem;
 }
 
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #ef5350,
+        transparent
+    );
+    margin: 4rem 0;
+}
+
+
 </style>
 
 <div class="homepage-hero">
     <h1 class="homepage-hero-title">dajhub</h1>
-    <p class="homepage-hero-subtitle">A small blog where, as a Linux enthusiast, I write tips and reminders to myself about what I have found helpful. Hopefully, you might find a useful post.</p>
+    <p class="homepage-hero-subtitle">Notes, tips, and experiments from my Linux journey. If it helps me, it might help you.</p>
+    <hr>
 </div>
 
