@@ -30,9 +30,8 @@ hr {
         #ef5350,
         transparent
     );
-    margin: 4rem 0;
+    margin-bottom: 4rem 0;
 }
-
 
 </style>
 
