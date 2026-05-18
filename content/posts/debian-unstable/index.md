@@ -37,8 +37,10 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
     This may take some time.  
     
         
-<div class="callout-tip">
-  
+<div class="callout-important">
+
+**Avoiding bugs**
+
 In order to make your life easier in the Unstable version, install the
 apt-listbugs and apt-listchanges packages so that you are notified of
 grave bugs or important changes when you install new packages or during

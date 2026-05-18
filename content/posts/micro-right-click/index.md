@@ -19,21 +19,21 @@ sudo micro /usr/share/applications/micro.desktop
 
 Change the line that reads
 
-> Exec = micro %F
+> `Exec = micro %F`
 
 to 
 
-> Exec = foot micro %F
+> `Exec = foot micro %F`
 
 If you use a different terminal, e.g. kitty/alacritty, then replace **foot** with your terminal.
 
 Next, go to the line that reads
 
-> Terminal = true
+> `Terminal = true`
 
 and change it to 
 
-> Terminal = false
+> `Terminal = false`
 
 The final file should look as follows:
 

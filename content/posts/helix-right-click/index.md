@@ -8,10 +8,12 @@ tags = ["software"]
 
 While I am still using the Micro text editor, I have also been testing out the [Helix editor](https://helix-editor.com) as an easier introduction (for me) to vim and Neovim.
 <br>  
-  
-> __<span style="color:red;">Note:</span>__
-> 
-> You can use any terminal with helix.  I'm using kitty so be aware that some of the guidance below relates to kitty. I am on Sway and Hyprland.
+
+<div class="callout-note">
+
+You can use any terminal with helix.  I'm using kitty so be aware that some of the guidance below relates to kitty. I am on Sway and Hyprland.
+
+</div>
 
 <br>
 As with the Micro text editor a couple of problems I came across were:
@@ -44,9 +46,11 @@ As with the Micro text editor a couple of problems I came across were:
   ```
 <br>
 
-> __<span style="color:red;">Note:</span>__
-> 
-> You mat need to change `/usr/lib/helix/hx` depending on the file location of helix."
+<div class="callout-note">
+
+You may need to change `/usr/lib/helix/hx` depending on the file location of helix.
+
+</div>
 
 <br>
 

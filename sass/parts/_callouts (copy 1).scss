@@ -1,0 +1,18 @@
+.callout-tip {
+  border: 0px solid #e78284;
+  border-radius: 6px;
+  margin: 2rem 0;
+  overflow: hidden;
+
+  &::before {
+    content: "! Tip: Avoiding bugs";
+    display: block;
+    background: #e78284;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.4rem 0.75rem;
+  }
+
+  padding: 1rem 1.25rem;
+  background: #f2d5cf22;
+}

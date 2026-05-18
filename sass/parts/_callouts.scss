@@ -1,18 +1,71 @@
-.callout-tip {
-  border: 0px solid #e78284;
-  border-radius: 6px;
-  margin: 2rem 0;
+.callout {
+  padding: 1rem 1.25rem;
+  max-width: 90%;
+  margin: 1.5rem auto;
+  border-radius: 5px;
+  border: 1px solid;
   overflow: hidden;
+}
+.callout-tip {
+  @extend .callout;
+  border-color: #81c8be;
+  background: #81c8be22;
 
   &::before {
-    content: "! Tip: Avoiding bugs";
+    content: "Tip";
     display: block;
-    background: #e78284;
+    border-radius: 5px;
+    background: #81c8be;
+    color: #232634;
+    font-weight: 600;
+    padding: 0.4rem 0.75rem;
+  }
+}
+.callout-important {
+  @extend .callout;
+  border-color: #ef9f76;
+  background: #f2d5cf22;
+
+  &::before {
+    content: "Important";
+    display: block;
+    border-radius: 5px;
+    background: #ef9f76;
     color: #fff;
     font-weight: 600;
     padding: 0.4rem 0.75rem;
   }
+}
 
-  padding: 1rem 1.25rem;
-  background: #f2d5cf22;
+.callout-note {
+  @extend .callout;
+  border-color: #ffdb3b;
+  background: #ffdb3b33;
+
+  &::before {
+    content: "Note";
+    display: block;
+    border-radius: 5px;
+    background: #ffdb3b;
+    color: #232634;
+    font-weight: 600;
+    padding: 0.4rem 0.75rem;
+  }
+}
+
+
+.callout-info {
+  @extend .callout;
+  border-color: #85c1dc; /* Frappe blue */
+  background: #85c1dc22; /* subtle blue tint */
+
+  &::before {
+    content: "Info";
+    display: block;
+    border-radius: 5px;
+    background: #85c1dc;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.4rem 0.75rem;
+  }
 }
