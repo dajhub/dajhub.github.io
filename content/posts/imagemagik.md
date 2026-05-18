@@ -50,3 +50,5 @@ convert forest.jpg -resize 1366x768 forest.jpg
 ```
 
 To find out the other things you can do with the package visit the ImageMagicks [**github page**](https://github.com/ImageMagick/ImageMagick#features-and-capabilities).
+
+
