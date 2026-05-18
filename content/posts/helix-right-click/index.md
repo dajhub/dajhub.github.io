@@ -7,15 +7,15 @@ tags = ["software"]
 +++
 
 While I am still using the Micro text editor, I have also been testing out the [Helix editor](https://helix-editor.com) as an easier introduction (for me) to vim and Neovim.
-<br>  
+  
 
 <div class="callout-note">
 
 You can use any terminal with helix.  I'm using kitty so be aware that some of the guidance below relates to kitty. I am on Sway and Hyprland.
 
 </div>
+  
 
-<br>
 As with the Micro text editor a couple of problems I came across were:
 
 1. Right-clicking in the file manager Thunar to open a file in the Helix editor, I would get an error message "Unable to find terminal required for application".
@@ -44,15 +44,14 @@ As with the Micro text editor a couple of problems I came across were:
   ```plain
   Exec=kitty -e /usr/lib/helix/hx %F
   ```
-<br>
-
+  
+  
 <div class="callout-note">
 
 You may need to change `/usr/lib/helix/hx` depending on the file location of helix.
 
 </div>
-
-<br>
+  
 
   When you have saved the file (ctrl+O and ctrl+x to exit) you can then update the desktop database:
 
