@@ -69,7 +69,7 @@ sudo micro /usr/share/sddm/themes/corners/theme.conf
 ```
 The contents of the **original** file:
 
-```bash
+```plain
 1	## Please see https://github.com/aczw/sddm-theme-corners/blob/main/CONFIG.md for
 2	## more information about these options. Happy configuring!
 3	
@@ -218,7 +218,7 @@ However, I might, in the near future, change the color of the date and time to i
 
 Below is the full config file for the updated theme:
 
-```bash
+```plain
 ## Please see https://github.com/aczw/sddm-theme-corners/blob/main/CONFIG.md for
 ## more information about these options. Happy configuring!
 

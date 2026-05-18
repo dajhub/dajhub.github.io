@@ -1,11 +1,14 @@
 .callout {
   padding: 1rem 1.25rem;
-  max-width: 100%;
-  margin: 1.5rem auto;
-  border-radius: 5px;
-  border: 1px solid;
+  margin: 1.5rem 1rem;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
   overflow: hidden;
 }
+
 .callout-tip {
   @extend .callout;
   border-color: #81c8be;
@@ -13,7 +16,7 @@
 
   &::before {
     content: "Tip";
-    display: block;
+    display: inline-block;
     border-radius: 5px;
     background: #81c8be;
     color: #232634;
@@ -28,7 +31,7 @@
 
   &::before {
     content: "Important";
-    display: block;
+    display: inline-block;
     border-radius: 5px;
     background: #ef9f76;
     color: #fff;
@@ -44,7 +47,7 @@
 
   &::before {
     content: "Note";
-    display: block;
+    display: inline-block;
     border-radius: 5px;
     background: #ffdb3b;
     color: #232634;
@@ -61,7 +64,7 @@
 
   &::before {
     content: "Info";
-    display: block;
+    display: inline-block;
     border-radius: 5px;
     background: #85c1dc;
     color: #fff;
