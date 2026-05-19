@@ -8,8 +8,9 @@ tags = ["software"]
 
 Using the Micro text editor has been a joy, but it does require sorting a few things to make it comfortable to use.  A problem I came across was in the file manager Thunar when I right-clicked on a file to open it in the Micro editor, I would get an error message "Unable to find terminal required for application".
 
-
-![error message](micro-editor.webp)
+<p align="center">
+  <img src="micro-editor.webp" alt="error message">
+</p>
 
 This is a simple problem to correct.  In a terminal open the following file:
 
