@@ -38,6 +38,7 @@ hr {
 <div class="homepage-hero">
     <h1 class="homepage-hero-title">blog</h1>
     <p class="homepage-hero-subtitle">Notes, tips, and experiments from my Linux journey. If it helps me, it might help you.</p>
+    <br>
     <hr>
 </div>
 
