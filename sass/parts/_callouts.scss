@@ -11,8 +11,8 @@
 
 .callout-tip {
   @extend .callout;
-  border-color: #81c8be;
-  background: #81c8be22;
+  border-color: #b7d9d3;
+  background: #b7d9d333;
 
   &::before {
     content: "Tip";
@@ -21,25 +21,25 @@
     margin: -1rem -1.25rem 0;   
     padding: 0.4rem 1.25rem;
     border-radius: 0;
-    background: #81c8be;
-    color: #232634;
+    background: #b7d9d3;
+    color: #233;
     font-weight: 600;
   }
 }
 .callout-important {
   @extend .callout;
-  border-color: #ef9f76;
-  background: #f2d5cf22;
+  border-color: #f3c7b3;
+  background: #f3c7b333;
 
   &::before {
     content: "Tip";
     display: block;
-    width: 100%;                 /* ensure it spans the box */
+    width: 100%;
     margin: -1rem -1.25rem 0;   
     padding: 0.4rem 1.25rem;
     border-radius: 0;
-    color: #fff;             
-    background: #ef9f76;
+    color: #232634;             
+    background:  #f3c7b3;
     font-weight: 600;
   }
 
@@ -47,8 +47,8 @@
 
 .callout-note {
   @extend .callout;
-  border-color: #ffdb3b;
-  background: #ffdb3b33;
+  border-color: #fff4b8;
+  background: #fff4b833;
 
   &::before {
     content: "Note";
@@ -57,7 +57,7 @@
     margin: -1rem -1.25rem 0;   
     padding: 0.4rem 1.25rem;
     border-radius: 0;
-    background: #ffdb3b;
+    background: #fff4b8;
     color: #232634;
     font-weight: 600;
   }
@@ -66,8 +66,8 @@
 
 .callout-info {
   @extend .callout;
-  border-color: #85c1dc; /* Frappe blue */
-  background: #85c1dc22; /* subtle blue tint */
+  border-color: #c9dff3;
+  background: #c9dff333;
 
   &::before {
     content: "Info";
@@ -76,8 +76,8 @@
     margin: -1rem -1.25rem 0;   
     padding: 0.4rem 1.25rem;
     border-radius: 0;
-    background: #85c1dc;
-    color: #fff;
+    background: #c9dff3;
+    color:  #232634;
     font-weight: 600;
   }
 }

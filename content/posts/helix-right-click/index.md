@@ -46,7 +46,7 @@ As with the Micro text editor a couple of problems I came across were:
   ```
   
   
-<div class="callout-note">
+<div class="callout-tip">
 
 You may need to change `/usr/lib/helix/hx` depending on the file location of helix.
 
