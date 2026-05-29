@@ -3,8 +3,8 @@
   margin: 1.5rem 1rem;
   border-top: 2px solid;
   border-bottom: 2px solid;
-  border-left: none;
-  border-right: none;
+  border-left: 2px solid;
+  border-right: 2px solid;
   border-radius: 0;
   overflow: hidden;
 }
@@ -16,12 +16,14 @@
 
   &::before {
     content: "Tip";
-    display: inline-block;
-    border-radius: 5px;
+    display: block;
+    width: 100%; 
+    margin: -1rem -1.25rem 0;   
+    padding: 0.4rem 1.25rem;
+    border-radius: 0;
     background: #81c8be;
     color: #232634;
     font-weight: 600;
-    padding: 0.4rem 0.75rem;
   }
 }
 .callout-important {
@@ -30,14 +32,17 @@
   background: #f2d5cf22;
 
   &::before {
-    content: "Important";
-    display: inline-block;
-    border-radius: 5px;
+    content: "Tip";
+    display: block;
+    width: 100%;                 /* ensure it spans the box */
+    margin: -1rem -1.25rem 0;   
+    padding: 0.4rem 1.25rem;
+    border-radius: 0;
+    color: #fff;             
     background: #ef9f76;
-    color: #fff;
     font-weight: 600;
-    padding: 0.4rem 0.75rem;
   }
+
 }
 
 .callout-note {
@@ -47,12 +52,14 @@
 
   &::before {
     content: "Note";
-    display: inline-block;
-    border-radius: 5px;
+    display: block;
+    width: 100%; 
+    margin: -1rem -1.25rem 0;   
+    padding: 0.4rem 1.25rem;
+    border-radius: 0;
     background: #ffdb3b;
     color: #232634;
     font-weight: 600;
-    padding: 0.4rem 0.75rem;
   }
 }
 
@@ -64,11 +71,13 @@
 
   &::before {
     content: "Info";
-    display: inline-block;
-    border-radius: 5px;
+    display: block;
+    width: 100%; 
+    margin: -1rem -1.25rem 0;   
+    padding: 0.4rem 1.25rem;
+    border-radius: 0;
     background: #85c1dc;
     color: #fff;
     font-weight: 600;
-    padding: 0.4rem 0.75rem;
   }
 }
