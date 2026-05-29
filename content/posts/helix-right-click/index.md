@@ -9,7 +9,7 @@ tags = ["software"]
 While I am still using the Micro text editor, I have also been testing out the [Helix editor](https://helix-editor.com) as an easier introduction (for me) to vim and Neovim.
   
 
-<div class="callout-note">
+<div class="callout-info">
 
 You can use any terminal with helix.  I'm using kitty so be aware that some of the guidance below relates to kitty. I am on Sway and Hyprland.
 
@@ -46,7 +46,7 @@ As with the Micro text editor a couple of problems I came across were:
   ```
   
   
-<div class="callout-tip">
+<div class="callout-important">
 
 You may need to change `/usr/lib/helix/hx` depending on the file location of helix.
 

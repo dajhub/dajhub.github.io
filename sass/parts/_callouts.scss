@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "JetBrainsMono Nerd";
+  src: url("/fonts/JetbrainsMono/JetBrainsMonoNerdFontPropo-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .callout {
   padding: 1rem 1.25rem;
   margin: 0rem 0rem;
@@ -9,75 +17,154 @@
   overflow: hidden;
 }
 
+// TIP
 .callout-tip {
   @extend .callout;
   border-color: #b7d9d3;
   background: #b7d9d333;
 
+  position: relative;
+  padding-top: 3rem;
+
   &::before {
-    content: "Tip";
-    display: block;
-    width: 100%; 
-    margin: -1rem -1.25rem 0;   
+    content: "\f0eb";
+    font-family: "JetBrainsMono Nerd";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
     padding: 0.4rem 1.25rem;
-    border-radius: 0;
+
     background: #b7d9d3;
     color: #233;
     font-weight: 600;
   }
+
+  &::after {
+    content: "Tip";
+
+    position: absolute;
+    top: 0.4rem;
+    left: 3rem;
+
+    font-family: inherit;
+    font-weight: 600;
+    color: #233;
+  }
 }
+
+// IMPORTANT
 .callout-important {
   @extend .callout;
   border-color: #f3c7b3;
   background: #f3c7b333;
 
+  position: relative;
+  padding-top: 3rem;
+
   &::before {
-    content: "Tip";
-    display: block;
+    content: "\f071";
+    font-family: "JetBrainsMono Nerd";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
-    margin: -1rem -1.25rem 0;   
     padding: 0.4rem 1.25rem;
-    border-radius: 0;
+
     color: #232634;             
     background:  #f3c7b3;
     font-weight: 600;
   }
+  &::after {
+    content: "Important";
 
+    position: absolute;
+    top: 0.4rem;
+    left: 3rem;
+
+    font-family: inherit;
+    font-weight: 600;
+    color: #233;
+  }
 }
 
+// NOTE
 .callout-note {
   @extend .callout;
   border-color: #fff4b8;
   background: #fff4b833;
 
+  position: relative;
+  padding-top: 3rem;
+
   &::before {
-    content: "Note";
-    display: block;
-    width: 100%; 
-    margin: -1rem -1.25rem 0;   
+    content: "\f040";
+    font-family: "JetBrainsMono Nerd";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
     padding: 0.4rem 1.25rem;
-    border-radius: 0;
-    background: #fff4b8;
-    color: #232634;
+
+    color: #232634;             
+    background:  #fff4b8;
     font-weight: 600;
+  }
+
+  &::after {
+    content: "Note";
+
+    position: absolute;
+    top: 0.4rem;
+    left: 3rem;
+
+    font-family: inherit;
+    font-weight: 600;
+    color: #233;
   }
 }
 
-
+// INFORMATION
 .callout-info {
   @extend .callout;
   border-color: #c9dff3;
   background: #c9dff333;
 
+  position: relative;
+  padding-top: 3rem;
+
   &::before {
-    content: "Info";
-    display: block;
-    width: 100%; 
-    margin: -1rem -1.25rem 0;   
+    content: "\f449";
+    font-family: "JetBrainsMono Nerd";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
     padding: 0.4rem 1.25rem;
-    border-radius: 0;
-    background: #c9dff3;
-    color:  #232634;
+
+    color: #232634;             
+    background:  #c9dff3;
     font-weight: 600;
   }
+
+  &::after {
+    content: "Information";
+
+    position: absolute;
+    top: 0.4rem;
+    left: 3rem;
+
+    font-family: inherit;
+    font-weight: 600;
+    color: #233;
+  }
+
 }

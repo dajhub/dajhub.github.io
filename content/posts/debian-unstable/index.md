@@ -37,7 +37,7 @@ Debian Unstable will provide you with newer packages, but there are inherent ris
     This may take some time.  
     
         
-<div class="callout-important">
+<div class="callout-tip">
 
 **Avoiding bugs**
 
